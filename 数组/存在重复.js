@@ -12,7 +12,7 @@
 //     输入: [1,1,1,3,3,4,3,2,4,2]
 //     输出: true
 
-// 方法1： O^2
+// 方法1： 时间 (O)^2 
 var containsDuplicate = function(nums) {
     let result = false;
     for (var i = 0; i < nums.length; i++) {
