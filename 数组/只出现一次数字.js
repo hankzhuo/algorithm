@@ -23,6 +23,7 @@ var singleNumber = function(nums) {
 };
 
 // 按位运算，按位异或
+// 两个相同数按位异或，结果为 0。任何数 x 与 0 按位异或，结果为 x。
 var singleNumber = function(nums) {
   return nums.reduce((prev, curr) => prev ^ curr, 0)
 };
