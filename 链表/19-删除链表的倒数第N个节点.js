@@ -24,7 +24,7 @@
  */
 var removeNthFromEnd = function(head, n) {
   let start = new ListNode(0)
-  let slow = start, fast = start;
+  let slow = start, fast = start; // 两个指针，一个慢指针 slow，一个快指针 fast
   start.next = head;
 
   // fast 先移动，使得 fast 和 slow 隔着 n 个节点
