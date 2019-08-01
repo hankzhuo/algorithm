@@ -23,7 +23,7 @@
  * @return {boolean}
  */
 var isPalindrome = function(head) {
-  let slow = head, fast = head, prev =null;
+  let slow = head, fast = head, prev = null;
   
   // 使用快慢指针找到链表中点
   while (fast)  {
