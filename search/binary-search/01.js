@@ -26,6 +26,8 @@ function binarySearch(arr, val) {
 
   return -1;
 }
+const arr = [1, 3, 4, 5, 6, 8, 9]
+console.log(binarySearch(arr, 8))
 
 // 递归实现
 function bSearch(arr, val) {
