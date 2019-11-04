@@ -1,3 +1,23 @@
+/**
+ * @description 单链表
+ * 1. add：在链表末尾加一位
+ *      没有 head 时，tail 和 head 都指向新节点
+ *      存在 head 时，this.tail.next 赋值为新 node，同时 新 node 赋值给 tail（顺序不能颠倒，先设置指向）
+ * 2. pop：在链表末尾删除一位
+ *      如果没有节点，返回 undefined  
+ *      遍历链表，直到找到最后 tail
+ *      设置倒数第二节点的 next 为 null
+ *      设置倒数第二为 tail
+ *      长度减一
+ * 3. shift：移除列表第一项
+ * 4. unshift: 列表最前面增加一项
+ * 5. get：获取某一项
+ * 6. set：设置某一项
+ * 7. insert: 插入某一项
+ * 8. remove: 移除某一项
+ * 9. reverse: 翻转链表
+ */
+
 class Node {
 	constructor(val) {
 		this.val = val;
@@ -126,22 +146,3 @@ list.push(21);
 list.push(32);
 list.push(44);
 list.push(55);
-
-/**
- * 1. a dd：在链表末尾加一位
- *      没有 head 时，tail 和 head 都指向新节点
- *      存在 head 时，this.tail.next 赋值为新 node，同时 新 node 赋值给 tail（顺序不能颠倒，先设置指向）
- * 2. pop：在链表末尾删除一位
- *      如果没有节点，返回 undefined  
- *      遍历链表，直到找到最后 tail
- *      设置倒数第二节点的 next 为 null
- *      设置倒数第二为 tail
- *      长度减一
- * 3. shift：移除列表第一项
- * 4. unshift: 列表最前面增加一项
- * 5. get：获取某一项
- * 6. set：设置某一项
- * 7. insert: 插入某一项
- * 8. remove: 移除某一项
- * 9. reverse: 翻转链表
- */

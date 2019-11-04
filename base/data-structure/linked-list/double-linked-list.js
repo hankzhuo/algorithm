@@ -1,3 +1,6 @@
+/**
+ * @description 双链表
+ */
 class Node {
   constructor(val) {
     this.val = val;

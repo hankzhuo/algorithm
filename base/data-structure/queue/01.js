@@ -5,7 +5,7 @@
  */
 
  // 顺序队列
- class Queue {
+class Queue {
   constructor(capacity) {
     this.queue = new Array(capacity) // capacity 队列容量
     this.count = capacity; // 队列大小

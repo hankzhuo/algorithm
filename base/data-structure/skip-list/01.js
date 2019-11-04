@@ -41,17 +41,17 @@ class SkipList {
     const newNode = new Node();
     newNode.data = value;
     newNode.maxLevel = level;
+
     const update = new Array(level).fill(new Node());
     let p = this.head;
 
     for (let i = level - 1; i >= 0; i--) {
       while (p.refer[i] !== undefined && p.refer[i].data < value) {
         p = p.refer[i];
-      }
-      
-      update[i] = p;
+      }      
+      update[i] = p; // 保存的是每次 while 循环终止的那个节点
     }
-
+    // 重新连线
     for (let i = 0; i < level; i++) {
       newNode.refer[i] = update[i].refer[i];
       update[i].refer[i] = newNode;
