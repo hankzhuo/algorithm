@@ -10,7 +10,7 @@
 //   输入: [4,1,2,1,2]
 //   输出: 4
 
-// 解法1
+// 解法1：时间复杂度 O(n)，空间复杂度 O(n)
 var singleNumber = function(nums) {
     let obj = {};
     for (var i = 0; i < nums.length; i++) {
@@ -23,8 +23,13 @@ var singleNumber = function(nums) {
     }
 };
 
-// 解法2：按位运算，按位异或
-// 两个相同数按位异或，结果为 0。任何数 x 与 0 按位异或，结果为 x。
+// 解法2：按位运算，按位异或。
 var singleNumber = function(nums) {
-  return nums.reduce((prev, curr) => prev ^ curr, 0)
+    let ans = nums[0];
+    if (nums.length > 1) {
+        for (let i = 1; i < nums.length; i++) {
+            ans = ans ^ nums[i];
+        }
+    }
+    return ans
 };
