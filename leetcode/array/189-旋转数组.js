@@ -30,7 +30,7 @@ var rotate = function(nums, k) {
 };
 
 // 解法 2：使用一个变量保存当前替换的元素
-// 复杂度分析：时间复杂度：O(n)，只遍历了每个元素一次。空间复杂度：O(1) ，使用了常数个额外空间。
+// 复杂度分析：时间复杂度：O(n)，只遍历了每个元素一次。空间复杂度：O(1)，使用了常数。
 var rotate = function(nums, k) {
   k = k % nums.length
   let count = 0;

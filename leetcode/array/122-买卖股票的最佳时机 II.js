@@ -42,7 +42,7 @@ var maxProfit = function(prices) {
   return profit;
 };
 
-// 方法2：
+// 方法2：动态规划
 var maxProfit = function(prices) {
     let profit = 0;
     // i = 1 ，解决了越界问题 i - 1
