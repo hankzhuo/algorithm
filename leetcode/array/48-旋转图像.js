@@ -29,7 +29,7 @@
 */
 var rotate = function(matrix) {
     let arr = matrix.reverse();
-    
+
     for (let i = 0; i < arr.length; i++) { // i 
         for (let j = i + 1; j < arr[i].length; j++) {
             let item = arr[i][j];
